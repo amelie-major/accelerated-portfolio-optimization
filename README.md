@@ -1,1 +1,1 @@
-# accelerated-portfolio-optimization
+# Accelerated Portfolio Optimization
