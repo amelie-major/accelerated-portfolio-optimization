@@ -1,5 +1,5 @@
  # Accelerating Portfolio Optimization
-
+This project shows me working through the cuOpt cuFolio lab and understanding and tracking my progress to understanding the mathematics behind portfolio optimization
 ## Context
 
 It is assumed it is an inherently sequential process but it can be accelerated by GPUs. Portfolio optimzation has existed for years and this will focus on the Markowitz risk-return method. 
