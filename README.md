@@ -17,7 +17,7 @@ Optimization appears at many parts of the trading, but the portfolio optimizatio
 
 The data from the portfolio optimization can be passed into the simulated execution or some form of simulation. 
 
-![image-2.png](attachment:images/image1.png)
+![image-2.png](images/image1.png)
 
 ## What are the objectives of portfolio optimization?
 
@@ -116,7 +116,7 @@ $$ minimize\ {c^T} x$$
 $$ subject\ to \ Ax = b:y , l\leq x\leq u$$
 
 At each stage, there is an iterate, but broadly it has an issue with convergence, so the approach was extended to *Primal-Dual Linear Programming*, which improves the convergence issue of PDHG and therefore a fraction of the problems are solved within given time. So if you fix a test set, it can solve all of the problems.
-![image-3.png](attachment:images/image2.png)
+![image-3.png](images/image2.png)
 
 
 cuOpt has a GPU-based PDLP, most of the time is spent computing two sparse matrix-vector multiplies:
@@ -125,7 +125,7 @@ $$A^T y, Ax$$
 Where $$A$$ is a large and sparse matrix, then there are map operations. They are memory bound so the higher memory bandwidth of the GPU helps scale up. 
 
 Below is the benchmark, with cuOpt working on a H100 GPU vs. a state-of-the-art linear program solver. 
-![image-4.png](attachment:images/image3.png)
+![image-4.png](images/image3.png)
 
 
 It is now open source at: https://www.nvidia.com/en-us/ai-data-science/products/cuopt/
