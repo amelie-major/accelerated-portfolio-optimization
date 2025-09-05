@@ -125,7 +125,7 @@ $$A^T y, Ax$$
 Where $$A$$ is a large and sparse matrix, then there are map operations. They are memory bound so the higher memory bandwidth of the GPU helps scale up. 
 
 Below is the benchmark, with cuOpt working on a H100 GPU vs. a state-of-the-art linear program solver. 
-![image-4.png](attachment:iamges/image3.png)
+![image-4.png](attachment:images/image3.png)
 
 
 It is now open source at: https://www.nvidia.com/en-us/ai-data-science/products/cuopt/
